@@ -1,4 +1,4 @@
-//operator 
+//operator
 var angka1= 3;
 var angka2= 2;
 var angka3= 4;
