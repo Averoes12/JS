@@ -8,22 +8,18 @@ if (nama === "" && peran) {
 }else if(nama && peran === "") {
 	console.log("Pilih Peran Anda");
 
-}else if (nama === nama && peran === peran) {
-
-    console.log("Halo " + nama + ", Anda adalah " + peran);
-
-} else if (nama === "nina" && peran === "Ksatria") {
+ }else if (peran === "Ksatria") {
 
   console.log("Selamat datang di Dunia Proxytia," + nama);
   console.log("Halo Ksatria " + nama + ",kamu dapat menyerang dengan senjatamu!");
-} else if (nama === "danu" && peran === "Tabib") {
+} else if (peran === "Tabib") {
 
   console.log("Selamat datang di Dunia Proxytia," +nama);
-  console.log("Halo Tabib" + nama + ", kamu akan membantu temanmu yang terluka.");
-} else if (nama === "zero" && peran === "Penyihir") {
+  console.log("Halo Tabib " + nama + ", kamu akan membantu temanmu yang terluka.");
+} else if (peran === "Penyihir") {
 
   console.log("Selamat datang di Dunia Proxytia," + nama);
-  console.log("Halo Penyihir" + Zero + ", ciptakan keajaiban yang membantu kemenanganmu!");
+  console.log("Halo Penyihir " + nama + ", ciptakan keajaiban yang membantu kemenanganmu!");
 
 } else {
   console.log("nama dan peran harus diisi");
