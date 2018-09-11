@@ -7,9 +7,11 @@ if (nama === "" && peran) {
 	console.log("Masukkan Nama Anda");
 }else if(nama && peran === "") {
 	console.log("Pilih Peran Anda");
-}else if (nama === nama && peran) {
 
-    console.log("Halo " + nama + ", Pilih peranmu untuk memulai game!");
+}else if (nama === nama && peran === peran) {
+
+    console.log("Halo " + nama + ", Anda adalah " + peran);
+
 } else if (nama === "nina" && peran === "Ksatria") {
 
   console.log("Selamat datang di Dunia Proxytia," + nama);
