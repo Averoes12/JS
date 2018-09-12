@@ -1,10 +1,10 @@
 var nilai= 1;
-var operasi=2;
+var operasi=10;
 var jumlah=10;
-while(nilai <=operasi) {
+while(nilai <= operasi) {
     alert("Ankot No."+ " " + nilai + " " + "beroperasi dengan baik.");
    console.log("Angkot No."+ " " + nilai + " " + "beroperasi dengan baik.");
-nilai++;
+ ++nilai;
 }
 
 for(nilai= operasi + 1; nilai <=jumlah; nilai++) {
