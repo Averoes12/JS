@@ -1,10 +1,11 @@
 function bmi(bb, tb) {
-	var b = bb / (tb * tb);
-	if (b < 17){
+	var b = bb / (tb/100 * tb/100);
+	console.log(b);
+	if (b < 17 || b < 18.4){
 		return "Kurus";
-	}else if (b < 23) {
+	}else if (b === 18.5 || b < 25.0 ) {
 		return "normal";
-	}else if(b < 27){
+	}else if(b === 25.1 || b < 27){
 		return "Gemuk";
 	}else if (b > 27){
 	return "Obesitas";
@@ -13,4 +14,4 @@ function bmi(bb, tb) {
 	}
 }
 
-console.log(bmi(52, 169));		
+console.log(bmi(52, 170));		
