@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Permanent+Marker|Inconsolata" rel="stylesheet">
     <link rel="icon" type="image" href="img/icon.png">
 
-    <title>Conter</title>
+    <title>Simple TodoList</title>
 
     <style type="text/css">
       body {
@@ -39,20 +39,25 @@
     <header class="text-center">Input Your Hobby</header>
     <div class="ml mr">
     <div class="input-group">
-  <input id="input" class="form-control" placeholder="Input Your Hobby" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <input id="input" class="form-control" placeholder="Input Your Hobby" aria-label="Recipient's username" aria-describedby="button-addon2" v-model= "todo.name" v-on="keyup.enter=addTodo">
   <div class="input-group-append mb-2">
     <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
   </div>
+</div>
+<div>
+
 </div>
     <ul id="list" class="list-group">
   <li class="list-group-item">Football</li>
   <li class="list-group-item">Swim</li>
 </ul>
-  
+ </div>
   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="todolist.js"></script>
+
+    <script src="https://unpkg.com/vue"></script>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
